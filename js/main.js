@@ -12,10 +12,17 @@
 
 
 const età = parseInt (prompt('Quanti anni hai?') );
+
 const km = parseInt (prompt('Quanti km vuoi fare?') );
 
-let prezzo = (km*0.21)
+let prezzo = (km*0.21).toFixed(2);
 
-if (età <= 18 {
-    prezzo = prezzo
+if (età < 18) {
+    prezzo = (prezzo-(prezzo*20/100)).toFixed(2);
 }
+
+if (età > 65) {
+    prezzo = (prezzo-(prezzo*40/100)).toFixed(2);
+}
+
+document.getElementById('prezzo').innerHTML =`il prezzo del biglietto è: ${prezzo}`;
