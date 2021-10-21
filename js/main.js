@@ -1,6 +1,6 @@
 // Richiesta età e Km al cliente
 const età = parseInt (prompt('Quanti anni hai?') );
-const km = parseInt (prompt('Quanti km vuoi fare?') );
+const km = parseFloat (prompt('Quanti km vuoi fare?') );
 
 // Calcolo prezzo standard 0,21*KM
 let prezzo = (km*0.21).toFixed(2);
